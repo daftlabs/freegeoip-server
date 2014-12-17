@@ -1,0 +1,10 @@
+{
+  "run_list": ["recipe[freegeoip-server]"],
+  "default_attributes": {
+    "freegeoip-path": "/var/www/freegeoip-server/vendor/freegeoip-3.0.2-linux-amd64",
+    "service_name": "freegeoip",
+    "bin_path": "/usr/bin/freegeoip",
+    "pid_path": "/tmp/freegeoip-pid",
+    "service_path": "/etc/init.d/freegeoip"
+  }
+}

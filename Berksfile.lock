@@ -1,0 +1,6 @@
+DEPENDENCIES
+  freegeoip-server
+    path: cookbooks/freegeoip-server
+
+GRAPH
+  freegeoip-server (0.1.0)

@@ -1,0 +1,5 @@
+name             'freegeoip-server'
+maintainer       'daft labs'
+license          'MIT'
+description      'serves freegeoip'
+version          '0.1.0'
