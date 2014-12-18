@@ -1,4 +1,5 @@
 require 'fileutils'
+include_recipe "git"
 
 unless Chef::Config[:solo] then
   directory "/var/www/.ssh" do
@@ -19,7 +20,7 @@ unless Chef::Config[:solo] then
     mode 00755
   end
 
-  git repo_directory do
+  git node['repo_directory'] do
     repository "git@github.com:daftlabs/freegeoip-server.git"
     enable_submodules true
     ssh_wrapper ssh_wrapper_file

@@ -3,4 +3,6 @@ maintainer       'daft labs'
 maintainer_email 'support@daftlabs.com'
 license          'MIT'
 description      'serves freegeoip'
-version          '0.1.0'
+version          '0.1.2'
+
+depends "git"
