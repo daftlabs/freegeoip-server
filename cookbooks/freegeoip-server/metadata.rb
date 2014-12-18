@@ -6,3 +6,5 @@ description      'serves freegeoip'
 version          '0.1.2'
 
 depends "git"
+depends "nginx"
+depends "apt"

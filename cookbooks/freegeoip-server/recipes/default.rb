@@ -1,4 +1,5 @@
 require 'fileutils'
+include_recipe "apt"
 include_recipe "git"
 
 unless Chef::Config[:solo] then
@@ -45,4 +46,16 @@ end
 service 'freegeoip' do
   action :start
 end
+
+package "nginx"
+
+template "/etc/nginx/conf.d/freegeoip.conf" do
+  source "conf.erb"
+end
+
+file "/etc/nginx/sites-enabled/default" do
+  action :delete
+end
+
+execute "service nginx restart"
 
