@@ -1,7 +1,7 @@
 freegeoip-server
 ================
 
-## Run Locally With Provising From Chef Solo ##
+## Run Locally With Provisioning From Chef Solo ##
 1. ```$ git submodule update --init --recursive```
 2. Install Virtual box
 3. Install Vagrant
@@ -10,7 +10,7 @@ freegeoip-server
 6. Install Vagrant Berkshelf ```$ vagrant plugin install vagrant-berkshelf```
 7. ```$ vagrant up```
 
-## Create EC2 Instance With Provising From Chef Server ##
+## Create EC2 Instance With Provisioning From Chef Server ##
 1. Setup knife.rb with correct AWS and Chef Server credentials.
 2. ``` $ knife ec2 server create -i <amazon_key>
     -r "recipe[freegeoip-server]"
